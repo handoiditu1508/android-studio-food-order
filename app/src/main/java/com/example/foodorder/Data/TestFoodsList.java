@@ -8,7 +8,7 @@ public class TestFoodsList {
 
 	private ArrayList<Food> foods;
 
-	private TestFoodsList foodsList;
+	private static TestFoodsList foodsList;
 
 	private TestFoodsList(){
 		foods = new ArrayList<Food>();
@@ -63,7 +63,7 @@ public class TestFoodsList {
 		);
 	}
 
-	public ArrayList<Food> GetFoodsList(){
+	public static ArrayList<Food> GetFoodsList(){
 		if(foodsList == null){
 			foodsList = new TestFoodsList();
 		}
